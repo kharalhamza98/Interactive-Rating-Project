@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #121417;
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerRating {
+  width: 100%;
+  max-width: 412px;
+  background-color: #181e27;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.star {
+  border-radius: 50%;
+  background-color: #262e38;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-weight: 500;
+}
+
+p {
+  font-size: 15px;
+  color: #959eac;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.ratingButton {
+  width: 50px;
+  height: 50px;
+  background-color: #262e38;
+  border: none;
+  border-radius: 50%;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #959eac;
+}
+
+.ratingButton:hover {
+  background-color: #fb7413;
+  color: #181e27;
+  cursor: pointer;
+}
+
+.ratingButton:active {
+  background-color: white;
+  color: #181e27;
+}
+
+.submit {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  background-color: #fb7413;
+  color: #181e27;
+}
+
+.submit:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.submit:active {
+  background-color: rgba(245, 245, 245, 0.836);
+}
+
+.error {
+  text-align: center;
+  color: red;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.containerTy {
+  width: 100%;
+  max-width: 412px;
+  background-color: #181e27;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic {
+  margin-bottom: 35px;
+}
+
+.rating {
+  background-color: #262e38;
+  padding: 8px 40px;
+  border-radius: 30px;
+  color: #fb7413;
+}
+
+.thanksP {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.whiteBackground {
+  background-color: white;
+  color: #121417;
+}
+
+@media only screen and (max-width: 413px) {
+  .containerRating,
+  .containerTy {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .submit:active {
+    background-color: white;
+  }
+
+  .ratingButton:active {
+    background-color: white;
+    color: #181e27;
+  }
+}
